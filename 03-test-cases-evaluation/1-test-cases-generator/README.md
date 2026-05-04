@@ -1,6 +1,6 @@
 # AI Realistic Test Cases Generator
 
-Generate evaluation test cases for agentic AI applications using Amazon Bedrock. Load ground truth data from S3 (JSONL, JSON, CSV), then produce both **functional** and **boundary** test cases in structured YAML format.
+Generate evaluation test cases for agentic AI applications using Amazon Bedrock. Load ground truth data from S3 (JSONL, JSON, CSV), then produce both **functional** and **edge** test cases in structured YAML format.
 
 Works from a Jupyter notebook, the command line, or as a Python library.
 
@@ -58,14 +58,14 @@ pip install pytest hypothesis
 python -m test_generator \
   --app-description "A restaurant reservation assistant on WhatsApp" \
   --s3-uri s3://my-bucket/ground-truth/ \
-  --model claude-4-sonnet \
+  --model claude-4.5-sonnet \
   --num-cases 5 \
   --num-questions 3 \
   --functional-ratio 70 \
   --output test_cases.yaml
 ```
 
-This generates 5 test cases (70% functional, 30% boundary), each with 3 turns, and writes them to `test_cases.yaml`.
+This generates 5 test cases (70% functional, 30% edge cases), each with 3 turns, and writes them to `test_cases.yaml`.
 
 ### Option 2: Jupyter Notebook
 
