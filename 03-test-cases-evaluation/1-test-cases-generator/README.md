@@ -1,4 +1,4 @@
-# S3 Ground Truth Test Generator
+# AI Realistic Test Cases Generator
 
 Generate evaluation test cases for agentic AI applications using Amazon Bedrock. Load ground truth data from S3 (JSONL, JSON, CSV), then produce both **functional** and **boundary** test cases in structured YAML format.
 
