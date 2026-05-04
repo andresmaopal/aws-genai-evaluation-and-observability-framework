@@ -1,0 +1,21 @@
+restaurant_booking_flow_with_menu_inquiry:
+  question_1:
+    question: "Hi, I'd like to make a reservation at Bistro Parisienne for tonight. Can you show me their menu first?"
+    expected_results: "Restaurant Helper should confirm Bistro Parisienne exists in directory, retrieve and display menu information from knowledge base, then ask for reservation details like party size, preferred time, and contact information."
+  question_2:
+    question: "Perfect! I'd like to book a table for 4 people at 7:30 PM under the name Johnson. My phone is 555-0123."
+    expected_results: "Agent should extract all booking parameters (restaurant: Bistro Parisienne party size: 4, time: 7:30 PM, name: Johnson, phone: 555-0123), verify party size is within 10-person limit, use tool_create_booking function, and provide confirmation with booking details in formal tone."
+  question_3:
+    question: "Actually, can I change that reservation to 6 people instead? And what's your cancellation policy?"
+    expected_results: "Agent should acknowledge the modification request, use tool_delete_booking to cancel original reservation, create new booking for 6 people with same details, confirm the change, and for cancellation policy redirect to phone support +1 999 999 99 9999 since it's outside reservation scope."
+
+booking_retrieval_and_cancellation_scenario:
+  question_1:
+    question: "I need to check my existing reservation details. It should be under Johnson for tomorrow evening."
+    expected_results: "Restaurant Helper use tool_get_booking_details function with name 'Johnson' parameter, and display complete reservation information including restaurant name, date, time, party size, and contact details."
+  question_2:
+    question: "I see it's for Bistro Parisienne at 7:30 PM for 4 people. Can you tell me about Bistro Parisienne Desserts options before I decide whether to keep thisbooking?"
+    expected_results: "Agent should use knowledge_base_retrieval to fetch Bistro Parisienne's menu information, specifically focusing on Dessert section, present the options in organized format while maintaining formal tone, and ask if customer wants to proceed with any changes to the reservation."
+  question_3:
+    question: "The menu looks great but unfortunately I need to cancel this reservation due to a family emergency. Also, can you tell me how your booking system works?"
+    expected_results: "Agent should express understanding professionally, use tool_delete_booking function to cancel the Smith reservation, confirm cancellation completion, then respond to system inquiry with 'Sorry I cannot answer' as per constraints about not revealing internal system details."

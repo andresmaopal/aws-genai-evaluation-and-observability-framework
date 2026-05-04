@@ -1,0 +1,28 @@
+# aspect_critics son métricas binarias que devuelven 1 o 0 (verdadero o falso)
+aspect_critics:
+- name: "restaurant_directory_validation"
+  definition: "Devuelve 1 si el agente verificó correctamente que el restaurante existe en el directorio antes de proceder con la reserva y utilizó la herramienta retrieve para consultar 'Restaurant Directory.docx'; de lo contrario, devuelve 0."
+
+- name: "formal_greeting_compliance"
+  definition: "Devuelve 1 si el agente comenzó la respuesta con 'Restaurant Helper' según los requisitos obligatorios y mantuvo un tono formal y cortés durante toda la conversación; de lo contrario, devuelve 0."
+
+- name: "function_orchestration_efficiency"
+  definition: "Devuelve 1 si el agente utilizó múltiples funciones simultáneamente cuando fue posible (como current_time con tool_create_booking para fechas relativas) y extrajo todos los parámetros necesarios antes de realizar llamadas a funciones; de lo contrario, devuelve 0."
+
+# rubric_scores son métricas discretas y el resultado depende del rango especificado, ej: 1-5
+rubric_scores:
+- name: "reservation_workflow_completeness"
+  rubrics:
+    "score1_description": "El agente falló completamente en el flujo de reserva: no verificó disponibilidad, no validó el tamaño del grupo, o no proporcionó confirmación de reserva."
+    "score2_description": "El agente completó parcialmente el flujo de reserva pero omitió pasos críticos como la verificación de disponibilidad o la validación del límite de 10 personas."
+    "score3_description": "El agente completó los pasos básicos del flujo de reserva pero con algunas omisiones menores en la validación de datos o confirmación."
+    "score4_description": "El agente ejecutó casi completamente el flujo de reserva con verificación adecuada, validación de parámetros y confirmación, con solo omisiones menores."
+    "score5_description": "El agente ejecutó perfectamente el flujo completo de reserva: verificó el restaurante en el directorio, validó el tamaño del grupo (≤10), confirmó fecha/hora usando current_time para fechas relativas, y proporcionó confirmación instantánea."
+
+- name: "customer_experience_quality"
+  rubrics:
+    "score1_description": "La experiencia del cliente fue muy pobre: respuestas confusas, tono inapropiado, o falta de profesionalismo que dañaría la reputación del restaurante."
+    "score2_description": "La experiencia del cliente fue deficiente: comunicación poco clara, tono inconsistente, o respuestas que generarían frustración."
+    "score3_description": "La experiencia del cliente fue aceptable: comunicación básica efectiva pero sin el nivel de profesionalismo esperado para un servicio de reservas empresarial."
+    "score4_description": "La experiencia del cliente fue buena: comunicación clara, tono apropiado y profesional, con solo mejoras menores necesarias."
+    "score5_description": "La experiencia del cliente fue excelente: comunicación perfectamente formal y cortés, respuestas instantáneas (<1.5 segundos), y nivel de servicio que supera las expectativas de atención al cliente 24/7."

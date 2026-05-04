@@ -1,0 +1,23 @@
+analisis_criptomonedas:
+  question_1:
+    question: "¿Puedes ayudarme a entender cómo está desempeñándose el mercado cripto hoy?"
+    expected_results: "El agente proporciona un análisis de situación del mercado cripto hoy"
+  question_2:
+    question: "Basándo en esa información, ¿cuáles son las 3 mejores criptomonedas que tuvieron el mejor rendimiento hoy?"
+    expected_results: "El agente lista las 3 mejores criptomonedas que tuvieron el mejor rendimiento hoy."
+  question_3:
+    question: "Amplia información sobre la mejor criptomoneda de tu anterior analisis"
+    expected_results: "El agente proporciona información detallada sobre la criptomoneda que se destacó más hoy"
+
+noticias_acciones:
+  question_1:
+    question: "¿Cuáles son las noticias más importantes del mercado de valores de hoy?"
+    expected_results: "El agente proporciona un resumen de las 2-3 noticias más relevantes del mercado de valores del día actual con fuentes confiables."
+
+informacion_acciones:
+  question_1:
+    question: "¿Cuál es el precio actual de las acciones de Tesla y su variación porcentual del día?"
+    expected_results: "El agente proporciona el precio actual de TSLA, el cambio porcentual diario y datos de volumen de trading actualizados."
+  question_2:
+    question: "¿Puedes mostrarme el rendimiento semanal de NVIDIA comparado con el índice S&P 500?"
+    expected_results: "El agente presenta el rendimiento porcentual semanal de NVDA versus el S&P 500 con gráficos comparativos si están disponibles."

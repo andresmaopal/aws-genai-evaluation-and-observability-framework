@@ -1,0 +1,79 @@
+# =============================================================================
+# S3 Ground Truth Test Generator — Configuration
+# =============================================================================
+# All keys are optional.  Values shown below are the built-in defaults.
+# Runtime arguments (CLI flags or notebook widget values) override these.
+# =============================================================================
+
+# -- S3 Ground Truth --------------------------------------------------------
+# S3 URI pointing to a prefix that contains JSONL, JSON, or CSV files.
+# s3_uri: s3://my-bucket/ground-truth/
+
+# Scan sub-prefixes recursively (true) or only the top-level prefix (false).
+# recursive: true
+
+# Lenient mode skips malformed records; strict mode fails on the first error.
+# lenient: true
+
+# -- Field Mapping ----------------------------------------------------------
+# Maps alternative column/key names in your ground truth files to canonical
+# TestCase fields.  Each list is checked in order; the first match wins.
+# field_mapping:
+#   prompt_aliases:
+#     - question
+#     - input
+#     - query
+#     - user_input
+#   expected_aliases:
+#     - answer
+#     - output
+#     - response
+#     - expected_output
+#     - expected_response
+#   id_aliases:
+#     - test_id
+#     - case_id
+#     - identifier
+#   contexts_aliases:
+#     - context
+#     - documents
+#     - passages
+#     - reference
+
+# -- Model & Region --------------------------------------------------------
+# Bedrock model identifier used for test case generation.
+# model_name: claude-4-sonnet
+
+# AWS region for Bedrock and S3 API calls.
+# aws_region: us-east-1
+
+# Path to the model registry JSON file.
+# model_list_path: model_list.json
+
+# -- Generation Parameters --------------------------------------------------
+# Percentage of functional test cases (0–100).  The remainder are boundary.
+# functional_ratio: 70
+
+# Total number of test cases to generate.
+# num_cases: 3
+
+# Number of conversation turns per test case.
+# num_questions_per_case: 2
+
+# Output serialisation format.
+# output_format: yaml
+
+# -- Prompt Template --------------------------------------------------------
+# Optional path to an external prompt template file.  When omitted the
+# bundled default template is used.
+# prompt_template_path: null
+
+# -- Languages --------------------------------------------------------------
+# Languages available in the notebook dropdown.
+# languages:
+#   - English
+#   - Spanish
+
+# -- Logging ----------------------------------------------------------------
+# Python logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL.
+# log_level: INFO

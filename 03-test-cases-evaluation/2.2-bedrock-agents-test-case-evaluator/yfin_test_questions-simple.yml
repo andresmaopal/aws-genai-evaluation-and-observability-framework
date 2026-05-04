@@ -1,0 +1,4 @@
+analisis_criptomonedas:
+  question_1:
+    question: "¿Puedes ayudarme a entender cómo está desempeñándose el mercado cripto hoy?"
+    expected_results: "El agente proporciona un análisis de situación del mercado cripto hoy"

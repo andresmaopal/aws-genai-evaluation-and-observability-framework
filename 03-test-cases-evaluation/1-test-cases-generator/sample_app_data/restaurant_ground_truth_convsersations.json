@@ -1,0 +1,395 @@
+[
+  {
+    "prompt": "Hola, ¿me pueden ayudar a encontrar un restaurante de mariscos en Seattle?",
+    "expected": "Restaurant Helper: Con gusto le ayudo. En nuestro directorio contamos con The Coastal Bloom, ubicado en 457 Harbor View Drive, Seattle, WA 98121, teléfono (206) 555-7890. Es una excelente opción de cocina costera en Seattle. ¿Desea ver el menú o realizar una reservación?",
+    "contexts": []
+  },
+  {
+    "prompt": "Sí, me gustaría ver el menú de The Coastal Bloom.",
+    "expected": "Con mucho gusto. El menú de The Coastal Bloom incluye una selección de platillos frescos de temporada. Entre sus especialidades se encuentran: chowder de almejas, salmón a la parrilla, langosta al vapor y ensalada de camarones. Los precios oscilan entre $18 y $45 por platillo. ¿Le gustaría hacer una reservación?",
+    "contexts": [
+      "user: Hola, ¿me pueden ayudar a encontrar un restaurante de mariscos en Seattle?",
+      "assistant: Restaurant Helper: Con gusto le ayudo. En nuestro directorio contamos con The Coastal Bloom, ubicado en 457 Harbor View Drive, Seattle, WA 98121, teléfono (206) 555-7890. Es una excelente opción de cocina costera en Seattle. ¿Desea ver el menú o realizar una reservación?"
+    ]
+  },
+  {
+    "prompt": "Sí, quisiera reservar una mesa para mañana a las 7 pm para 4 personas.",
+    "expected": "Perfecto. Para confirmar su reservación en The Coastal Bloom: mañana 4 de mayo de 2026 a las 7:00 PM para 4 personas. ¿Me podría proporcionar su nombre completo para registrar la reservación?",
+    "contexts": [
+      "user: Hola, ¿me pueden ayudar a encontrar un restaurante de mariscos en Seattle?",
+      "assistant: Restaurant Helper: Con gusto le ayudo. En nuestro directorio contamos con The Coastal Bloom, ubicado en 457 Harbor View Drive, Seattle, WA 98121, teléfono (206) 555-7890. Es una excelente opción de cocina costera en Seattle. ¿Desea ver el menú o realizar una reservación?",
+      "user: Sí, me gustaría ver el menú de The Coastal Bloom.",
+      "assistant: Con mucho gusto. El menú de The Coastal Bloom incluye una selección de platillos frescos de temporada. Entre sus especialidades se encuentran: chowder de almejas, salmón a la parrilla, langosta al vapor y ensalada de camarones. Los precios oscilan entre $18 y $45 por platillo. ¿Le gustaría hacer una reservación?"
+    ]
+  },
+  {
+    "prompt": "Claro, mi nombre es Carlos Mendoza.",
+    "expected": "Muchas gracias, señor Mendoza. Su reservación ha sido creada exitosamente. Resumen: The Coastal Bloom, 4 de mayo de 2026 a las 7:00 PM, 4 personas, a nombre de Carlos Mendoza. Su número de confirmación es #CB20260504. ¿Hay algo más en lo que pueda asistirle?",
+    "contexts": [
+      "user: Sí, me gustaría ver el menú de The Coastal Bloom.",
+      "assistant: Con mucho gusto. El menú de The Coastal Bloom incluye una selección de platillos frescos de temporada. Entre sus especialidades se encuentran: chowder de almejas, salmón a la parrilla, langosta al vapor y ensalada de camarones. Los precios oscilan entre $18 y $45 por platillo. ¿Le gustaría hacer una reservación?",
+      "user: Sí, quisiera reservar una mesa para mañana a las 7 pm para 4 personas.",
+      "assistant: Perfecto. Para confirmar su reservación en The Coastal Bloom: mañana 4 de mayo de 2026 a las 7:00 PM para 4 personas. ¿Me podría proporcionar su nombre completo para registrar la reservación?"
+    ]
+  },
+  {
+    "prompt": "¿Pueden confirmarme los detalles de mi reservación?",
+    "expected": "Por supuesto. Los detalles de su reservación son los siguientes: Restaurante: The Coastal Bloom, Dirección: 457 Harbor View Drive, Seattle, WA 98121, Fecha: 4 de mayo de 2026, Hora: 7:00 PM, Número de personas: 4, Nombre: Carlos Mendoza, Número de confirmación: #CB20260504. ¿Necesita realizar algún cambio?",
+    "contexts": [
+      "user: Sí, quisiera reservar una mesa para mañana a las 7 pm para 4 personas.",
+      "assistant: Perfecto. Para confirmar su reservación en The Coastal Bloom: mañana 4 de mayo de 2026 a las 7:00 PM para 4 personas. ¿Me podría proporcionar su nombre completo para registrar la reservación?",
+      "user: Claro, mi nombre es Carlos Mendoza.",
+      "assistant: Muchas gracias, señor Mendoza. Su reservación ha sido creada exitosamente. Resumen: The Coastal Bloom, 4 de mayo de 2026 a las 7:00 PM, 4 personas, a nombre de Carlos Mendoza. Su número de confirmación es #CB20260504. ¿Hay algo más en lo que pueda asistirle?"
+    ]
+  },
+  {
+    "prompt": "No, todo está bien. Muchas gracias.",
+    "expected": "Con mucho gusto, señor Mendoza. Le esperamos en The Coastal Bloom. Si necesita modificar o cancelar su reservación, no dude en contactarnos. ¡Que tenga una excelente velada!",
+    "contexts": [
+      "user: Claro, mi nombre es Carlos Mendoza.",
+      "assistant: Muchas gracias, señor Mendoza. Su reservación ha sido creada exitosamente. Resumen: The Coastal Bloom, 4 de mayo de 2026 a las 7:00 PM, 4 personas, a nombre de Carlos Mendoza. Su número de confirmación es #CB20260504. ¿Hay algo más en lo que pueda asistirle?",
+      "user: ¿Pueden confirmarme los detalles de mi reservación?",
+      "assistant: Por supuesto. Los detalles de su reservación son los siguientes: Restaurante: The Coastal Bloom, Dirección: 457 Harbor View Drive, Seattle, WA 98121, Fecha: 4 de mayo de 2026, Hora: 7:00 PM, Número de personas: 4, Nombre: Carlos Mendoza, Número de confirmación: #CB20260504. ¿Necesita realizar algún cambio?"
+    ]
+  },
+  {
+    "prompt": "Hola, estoy buscando un restaurante de comida italiana en Boston.",
+    "expected": "Restaurant Helper: Bienvenido. En nuestro directorio contamos con Nonna's Hearth, ubicado en 214 Mulberry Lane, Boston, MA 02116, teléfono (617) 555-2390. Es un restaurante de cocina italiana tradicional. ¿Desea conocer el menú o hacer una reservación?",
+    "contexts": [
+      "user: ¿Pueden confirmarme los detalles de mi reservación?",
+      "assistant: Por supuesto. Los detalles de su reservación son los siguientes: Restaurante: The Coastal Bloom, Dirección: 457 Harbor View Drive, Seattle, WA 98121, Fecha: 4 de mayo de 2026, Hora: 7:00 PM, Número de personas: 4, Nombre: Carlos Mendoza, Número de confirmación: #CB20260504. ¿Necesita realizar algún cambio?",
+      "user: No, todo está bien. Muchas gracias.",
+      "assistant: Con mucho gusto, señor Mendoza. Le esperamos en The Coastal Bloom. Si necesita modificar o cancelar su reservación, no dude en contactarnos. ¡Que tenga una excelente velada!"
+    ]
+  },
+  {
+    "prompt": "¿Qué platillos tienen disponibles?",
+    "expected": "El menú de Nonna's Hearth ofrece auténtica cocina italiana casera. Entre sus especialidades destacan: pasta fresca artesanal, risotto de hongos porcini, ossobuco a la milanesa, tiramisú casero y una amplia selección de vinos italianos. Los precios van de $16 a $42 por platillo. ¿Le gustaría reservar una mesa?",
+    "contexts": [
+      "user: No, todo está bien. Muchas gracias.",
+      "assistant: Con mucho gusto, señor Mendoza. Le esperamos en The Coastal Bloom. Si necesita modificar o cancelar su reservación, no dude en contactarnos. ¡Que tenga una excelente velada!",
+      "user: Hola, estoy buscando un restaurante de comida italiana en Boston.",
+      "assistant: Restaurant Helper: Bienvenido. En nuestro directorio contamos con Nonna's Hearth, ubicado en 214 Mulberry Lane, Boston, MA 02116, teléfono (617) 555-2390. Es un restaurante de cocina italiana tradicional. ¿Desea conocer el menú o hacer una reservación?"
+    ]
+  },
+  {
+    "prompt": "Sí, quisiera reservar para hoy en la noche, somos 6 personas, a las 8 pm.",
+    "expected": "Con gusto. Para confirmar: Nonna's Hearth, hoy 3 de mayo de 2026 a las 8:00 PM para 6 personas. ¿Me podría indicar el nombre para la reservación?",
+    "contexts": [
+      "user: Hola, estoy buscando un restaurante de comida italiana en Boston.",
+      "assistant: Restaurant Helper: Bienvenido. En nuestro directorio contamos con Nonna's Hearth, ubicado en 214 Mulberry Lane, Boston, MA 02116, teléfono (617) 555-2390. Es un restaurante de cocina italiana tradicional. ¿Desea conocer el menú o hacer una reservación?",
+      "user: ¿Qué platillos tienen disponibles?",
+      "assistant: El menú de Nonna's Hearth ofrece auténtica cocina italiana casera. Entre sus especialidades destacan: pasta fresca artesanal, risotto de hongos porcini, ossobuco a la milanesa, tiramisú casero y una amplia selección de vinos italianos. Los precios van de $16 a $42 por platillo. ¿Le gustaría reservar una mesa?"
+    ]
+  },
+  {
+    "prompt": "A nombre de María González.",
+    "expected": "Perfecto, señora González. Su reservación ha sido registrada exitosamente. Resumen: Nonna's Hearth, 3 de mayo de 2026 a las 8:00 PM, 6 personas, a nombre de María González. Número de confirmación: #NH20260503. ¿Puedo ayudarle en algo más?",
+    "contexts": [
+      "user: ¿Qué platillos tienen disponibles?",
+      "assistant: El menú de Nonna's Hearth ofrece auténtica cocina italiana casera. Entre sus especialidades destacan: pasta fresca artesanal, risotto de hongos porcini, ossobuco a la milanesa, tiramisú casero y una amplia selección de vinos italianos. Los precios van de $16 a $42 por platillo. ¿Le gustaría reservar una mesa?",
+      "user: Sí, quisiera reservar para hoy en la noche, somos 6 personas, a las 8 pm.",
+      "assistant: Con gusto. Para confirmar: Nonna's Hearth, hoy 3 de mayo de 2026 a las 8:00 PM para 6 personas. ¿Me podría indicar el nombre para la reservación?"
+    ]
+  },
+  {
+    "prompt": "En realidad necesito cancelar esa reservación.",
+    "expected": "Entendido, señora González. Su reservación #NH20260503 en Nonna's Hearth para el 3 de mayo de 2026 a las 8:00 PM ha sido cancelada exitosamente. Lamentamos no poder recibirle esta noche. Si desea hacer una nueva reservación en el futuro, con gusto le atenderemos.",
+    "contexts": [
+      "user: Sí, quisiera reservar para hoy en la noche, somos 6 personas, a las 8 pm.",
+      "assistant: Con gusto. Para confirmar: Nonna's Hearth, hoy 3 de mayo de 2026 a las 8:00 PM para 6 personas. ¿Me podría indicar el nombre para la reservación?",
+      "user: A nombre de María González.",
+      "assistant: Perfecto, señora González. Su reservación ha sido registrada exitosamente. Resumen: Nonna's Hearth, 3 de mayo de 2026 a las 8:00 PM, 6 personas, a nombre de María González. Número de confirmación: #NH20260503. ¿Puedo ayudarle en algo más?"
+    ]
+  },
+  {
+    "prompt": "Hola, ¿tienen restaurantes de comida fusión en San Francisco?",
+    "expected": "Restaurant Helper: Claro que sí. En San Francisco contamos con Rice & Spice, ubicado en 539 Fusion Boulevard, San Francisco, CA. Es un restaurante especializado en cocina fusión con influencias asiáticas y latinoamericanas. ¿Desea ver el menú o realizar una reservación?",
+    "contexts": [
+      "user: A nombre de María González.",
+      "assistant: Perfecto, señora González. Su reservación ha sido registrada exitosamente. Resumen: Nonna's Hearth, 3 de mayo de 2026 a las 8:00 PM, 6 personas, a nombre de María González. Número de confirmación: #NH20260503. ¿Puedo ayudarle en algo más?",
+      "user: En realidad necesito cancelar esa reservación.",
+      "assistant: Entendido, señora González. Su reservación #NH20260503 en Nonna's Hearth para el 3 de mayo de 2026 a las 8:00 PM ha sido cancelada exitosamente. Lamentamos no poder recibirle esta noche. Si desea hacer una nueva reservación en el futuro, con gusto le atenderemos."
+    ]
+  },
+  {
+    "prompt": "Me gustaría ver el menú primero.",
+    "expected": "El menú de Rice & Spice combina técnicas culinarias asiáticas y latinoamericanas. Sus platillos estrella incluyen: tacos de pato pekinés, ceviche con toques de jengibre, arroz frito con chorizo, dumplings rellenos de carnitas y postres de matcha con cajeta. Precios entre $14 y $38. ¿Le gustaría hacer una reservación?",
+    "contexts": [
+      "user: En realidad necesito cancelar esa reservación.",
+      "assistant: Entendido, señora González. Su reservación #NH20260503 en Nonna's Hearth para el 3 de mayo de 2026 a las 8:00 PM ha sido cancelada exitosamente. Lamentamos no poder recibirle esta noche. Si desea hacer una nueva reservación en el futuro, con gusto le atenderemos.",
+      "user: Hola, ¿tienen restaurantes de comida fusión en San Francisco?",
+      "assistant: Restaurant Helper: Claro que sí. En San Francisco contamos con Rice & Spice, ubicado en 539 Fusion Boulevard, San Francisco, CA. Es un restaurante especializado en cocina fusión con influencias asiáticas y latinoamericanas. ¿Desea ver el menú o realizar una reservación?"
+    ]
+  },
+  {
+    "prompt": "Sí, para el próximo sábado a las 2 pm, somos 3 personas. Me llamo Andrés Torres.",
+    "expected": "Perfecto, señor Torres. Su reservación ha sido creada: Rice & Spice, sábado 9 de mayo de 2026 a las 2:00 PM, 3 personas, a nombre de Andrés Torres. Número de confirmación: #RS20260509. ¿Necesita algo más?",
+    "contexts": [
+      "user: Hola, ¿tienen restaurantes de comida fusión en San Francisco?",
+      "assistant: Restaurant Helper: Claro que sí. En San Francisco contamos con Rice & Spice, ubicado en 539 Fusion Boulevard, San Francisco, CA. Es un restaurante especializado en cocina fusión con influencias asiáticas y latinoamericanas. ¿Desea ver el menú o realizar una reservación?",
+      "user: Me gustaría ver el menú primero.",
+      "assistant: El menú de Rice & Spice combina técnicas culinarias asiáticas y latinoamericanas. Sus platillos estrella incluyen: tacos de pato pekinés, ceviche con toques de jengibre, arroz frito con chorizo, dumplings rellenos de carnitas y postres de matcha con cajeta. Precios entre $14 y $38. ¿Le gustaría hacer una reservación?"
+    ]
+  },
+  {
+    "prompt": "¿Tienen opciones vegetarianas en el menú?",
+    "expected": "Sí, señor Torres. Rice & Spice ofrece varias opciones vegetarianas: dumplings de verduras salteadas, curry de tofu con leche de coco, ensalada de papaya verde y arroz frito con vegetales de temporada. Todos los platillos pueden adaptarse para dietas veganas bajo solicitud. ¿Hay algo más en lo que pueda asistirle?",
+    "contexts": [
+      "user: Me gustaría ver el menú primero.",
+      "assistant: El menú de Rice & Spice combina técnicas culinarias asiáticas y latinoamericanas. Sus platillos estrella incluyen: tacos de pato pekinés, ceviche con toques de jengibre, arroz frito con chorizo, dumplings rellenos de carnitas y postres de matcha con cajeta. Precios entre $14 y $38. ¿Le gustaría hacer una reservación?",
+      "user: Sí, para el próximo sábado a las 2 pm, somos 3 personas. Me llamo Andrés Torres.",
+      "assistant: Perfecto, señor Torres. Su reservación ha sido creada: Rice & Spice, sábado 9 de mayo de 2026 a las 2:00 PM, 3 personas, a nombre de Andrés Torres. Número de confirmación: #RS20260509. ¿Necesita algo más?"
+    ]
+  },
+  {
+    "prompt": "Hola, quisiera saber qué restaurantes tienen disponibles en Chicago.",
+    "expected": "Restaurant Helper: Con gusto. En Chicago contamos con Spice Caravan, ubicado en 328 SaKron Street, Chicago, IL 60607, teléfono (312) 555-3421. Es un restaurante de cocina de Medio Oriente y especias exóticas. ¿Desea más información o hacer una reservación?",
+    "contexts": [
+      "user: Sí, para el próximo sábado a las 2 pm, somos 3 personas. Me llamo Andrés Torres.",
+      "assistant: Perfecto, señor Torres. Su reservación ha sido creada: Rice & Spice, sábado 9 de mayo de 2026 a las 2:00 PM, 3 personas, a nombre de Andrés Torres. Número de confirmación: #RS20260509. ¿Necesita algo más?",
+      "user: ¿Tienen opciones vegetarianas en el menú?",
+      "assistant: Sí, señor Torres. Rice & Spice ofrece varias opciones vegetarianas: dumplings de verduras salteadas, curry de tofu con leche de coco, ensalada de papaya verde y arroz frito con vegetales de temporada. Todos los platillos pueden adaptarse para dietas veganas bajo solicitud. ¿Hay algo más en lo que pueda asistirle?"
+    ]
+  },
+  {
+    "prompt": "¿Cuáles son sus horarios de atención?",
+    "expected": "Spice Caravan atiende de lunes a viernes de 12:00 PM a 10:00 PM, y los fines de semana de 11:00 AM a 11:00 PM. Para consultas adicionales puede comunicarse al (312) 555-3421. ¿Le gustaría hacer una reservación?",
+    "contexts": [
+      "user: ¿Tienen opciones vegetarianas en el menú?",
+      "assistant: Sí, señor Torres. Rice & Spice ofrece varias opciones vegetarianas: dumplings de verduras salteadas, curry de tofu con leche de coco, ensalada de papaya verde y arroz frito con vegetales de temporada. Todos los platillos pueden adaptarse para dietas veganas bajo solicitud. ¿Hay algo más en lo que pueda asistirle?",
+      "user: Hola, quisiera saber qué restaurantes tienen disponibles en Chicago.",
+      "assistant: Restaurant Helper: Con gusto. En Chicago contamos con Spice Caravan, ubicado en 328 SaKron Street, Chicago, IL 60607, teléfono (312) 555-3421. Es un restaurante de cocina de Medio Oriente y especias exóticas. ¿Desea más información o hacer una reservación?"
+    ]
+  },
+  {
+    "prompt": "Sí, para el viernes a las 7:30 pm, somos 2 personas. Me llamo Sofía Ramírez.",
+    "expected": "Con gusto, señora Ramírez. Reservación confirmada: Spice Caravan, viernes 8 de mayo de 2026 a las 7:30 PM, 2 personas, a nombre de Sofía Ramírez. Número de confirmación: #SC20260508. ¿Puedo ayudarle en algo más?",
+    "contexts": [
+      "user: Hola, quisiera saber qué restaurantes tienen disponibles en Chicago.",
+      "assistant: Restaurant Helper: Con gusto. En Chicago contamos con Spice Caravan, ubicado en 328 SaKron Street, Chicago, IL 60607, teléfono (312) 555-3421. Es un restaurante de cocina de Medio Oriente y especias exóticas. ¿Desea más información o hacer una reservación?",
+      "user: ¿Cuáles son sus horarios de atención?",
+      "assistant: Spice Caravan atiende de lunes a viernes de 12:00 PM a 10:00 PM, y los fines de semana de 11:00 AM a 11:00 PM. Para consultas adicionales puede comunicarse al (312) 555-3421. ¿Le gustaría hacer una reservación?"
+    ]
+  },
+  {
+    "prompt": "¿Tienen menú de degustación disponible?",
+    "expected": "Sí, señora Ramírez. Spice Caravan ofrece un menú de degustación de 5 tiempos los viernes y sábados por $65 por persona, que incluye: hummus artesanal, falafel crujiente, cordero a las especias, arroz basmati con frutos secos y baklava de pistacho. Se recomienda solicitarlo con anticipación al momento de la reservación. ¿Desea incluirlo en su reservación?",
+    "contexts": [
+      "user: ¿Cuáles son sus horarios de atención?",
+      "assistant: Spice Caravan atiende de lunes a viernes de 12:00 PM a 10:00 PM, y los fines de semana de 11:00 AM a 11:00 PM. Para consultas adicionales puede comunicarse al (312) 555-3421. ¿Le gustaría hacer una reservación?",
+      "user: Sí, para el viernes a las 7:30 pm, somos 2 personas. Me llamo Sofía Ramírez.",
+      "assistant: Con gusto, señora Ramírez. Reservación confirmada: Spice Caravan, viernes 8 de mayo de 2026 a las 7:30 PM, 2 personas, a nombre de Sofía Ramírez. Número de confirmación: #SC20260508. ¿Puedo ayudarle en algo más?"
+    ]
+  },
+  {
+    "prompt": "Sí, por favor inclúyanlo para las 2 personas.",
+    "expected": "Perfecto. Su reservación ha sido actualizada: Spice Caravan, viernes 8 de mayo de 2026 a las 7:30 PM, 2 personas con menú de degustación ($130 total), a nombre de Sofía Ramírez. Confirmación: #SC20260508. ¡Le esperamos!",
+    "contexts": [
+      "user: Sí, para el viernes a las 7:30 pm, somos 2 personas. Me llamo Sofía Ramírez.",
+      "assistant: Con gusto, señora Ramírez. Reservación confirmada: Spice Caravan, viernes 8 de mayo de 2026 a las 7:30 PM, 2 personas, a nombre de Sofía Ramírez. Número de confirmación: #SC20260508. ¿Puedo ayudarle en algo más?",
+      "user: ¿Tienen menú de degustación disponible?",
+      "assistant: Sí, señora Ramírez. Spice Caravan ofrece un menú de degustación de 5 tiempos los viernes y sábados por $65 por persona, que incluye: hummus artesanal, falafel crujiente, cordero a las especias, arroz basmati con frutos secos y baklava de pistacho. Se recomienda solicitarlo con anticipación al momento de la reservación. ¿Desea incluirlo en su reservación?"
+    ]
+  },
+  {
+    "prompt": "Hola, busco un restaurante con ambiente al aire libre en Portland.",
+    "expected": "Restaurant Helper: Bienvenido. En Portland contamos con Botanic Table, ubicado en 1845 Garden Avenue, Portland, OR 97205, teléfono (503) 555-9876. Es un restaurante de cocina orgánica con jardín y terraza al aire libre. ¿Desea ver el menú o hacer una reservación?",
+    "contexts": [
+      "user: ¿Tienen menú de degustación disponible?",
+      "assistant: Sí, señora Ramírez. Spice Caravan ofrece un menú de degustación de 5 tiempos los viernes y sábados por $65 por persona, que incluye: hummus artesanal, falafel crujiente, cordero a las especias, arroz basmati con frutos secos y baklava de pistacho. Se recomienda solicitarlo con anticipación al momento de la reservación. ¿Desea incluirlo en su reservación?",
+      "user: Sí, por favor inclúyanlo para las 2 personas.",
+      "assistant: Perfecto. Su reservación ha sido actualizada: Spice Caravan, viernes 8 de mayo de 2026 a las 7:30 PM, 2 personas con menú de degustación ($130 total), a nombre de Sofía Ramírez. Confirmación: #SC20260508. ¡Le esperamos!"
+    ]
+  },
+  {
+    "prompt": "¿Tienen opciones para personas con alergias al gluten?",
+    "expected": "Sí. Botanic Table cuenta con una sección completa de platillos libres de gluten, claramente identificados en el menú. Entre ellos: ensalada de quínoa con vegetales de temporada, salmón orgánico a las hierbas, risotto de arroz integral y postres de frutas frescas. El personal está capacitado para atender necesidades dietéticas especiales. ¿Le gustaría reservar?",
+    "contexts": [
+      "user: Sí, por favor inclúyanlo para las 2 personas.",
+      "assistant: Perfecto. Su reservación ha sido actualizada: Spice Caravan, viernes 8 de mayo de 2026 a las 7:30 PM, 2 personas con menú de degustación ($130 total), a nombre de Sofía Ramírez. Confirmación: #SC20260508. ¡Le esperamos!",
+      "user: Hola, busco un restaurante con ambiente al aire libre en Portland.",
+      "assistant: Restaurant Helper: Bienvenido. En Portland contamos con Botanic Table, ubicado en 1845 Garden Avenue, Portland, OR 97205, teléfono (503) 555-9876. Es un restaurante de cocina orgánica con jardín y terraza al aire libre. ¿Desea ver el menú o hacer una reservación?"
+    ]
+  },
+  {
+    "prompt": "Sí, para este domingo al mediodía, somos 5 personas. Me llamo Roberto Vega.",
+    "expected": "Con gusto, señor Vega. Reservación confirmada: Botanic Table, domingo 10 de mayo de 2026 a las 12:00 PM, 5 personas, a nombre de Roberto Vega. Número de confirmación: #BT20260510. ¿Desea agregar alguna indicación especial sobre alergias al gluten para su mesa?",
+    "contexts": [
+      "user: Hola, busco un restaurante con ambiente al aire libre en Portland.",
+      "assistant: Restaurant Helper: Bienvenido. En Portland contamos con Botanic Table, ubicado en 1845 Garden Avenue, Portland, OR 97205, teléfono (503) 555-9876. Es un restaurante de cocina orgánica con jardín y terraza al aire libre. ¿Desea ver el menú o hacer una reservación?",
+      "user: ¿Tienen opciones para personas con alergias al gluten?",
+      "assistant: Sí. Botanic Table cuenta con una sección completa de platillos libres de gluten, claramente identificados en el menú. Entre ellos: ensalada de quínoa con vegetales de temporada, salmón orgánico a las hierbas, risotto de arroz integral y postres de frutas frescas. El personal está capacitado para atender necesidades dietéticas especiales. ¿Le gustaría reservar?"
+    ]
+  },
+  {
+    "prompt": "Sí, por favor indiquen que 3 de los comensales requieren menú sin gluten.",
+    "expected": "Anotado, señor Vega. Su reservación ha sido actualizada con la indicación: 3 comensales requieren menú sin gluten. Confirmación: #BT20260510. El equipo de Botanic Table estará preparado para atenderles. ¿Hay algo más en lo que pueda asistirle?",
+    "contexts": [
+      "user: ¿Tienen opciones para personas con alergias al gluten?",
+      "assistant: Sí. Botanic Table cuenta con una sección completa de platillos libres de gluten, claramente identificados en el menú. Entre ellos: ensalada de quínoa con vegetales de temporada, salmón orgánico a las hierbas, risotto de arroz integral y postres de frutas frescas. El personal está capacitado para atender necesidades dietéticas especiales. ¿Le gustaría reservar?",
+      "user: Sí, para este domingo al mediodía, somos 5 personas. Me llamo Roberto Vega.",
+      "assistant: Con gusto, señor Vega. Reservación confirmada: Botanic Table, domingo 10 de mayo de 2026 a las 12:00 PM, 5 personas, a nombre de Roberto Vega. Número de confirmación: #BT20260510. ¿Desea agregar alguna indicación especial sobre alergias al gluten para su mesa?"
+    ]
+  },
+  {
+    "prompt": "Hola, quisiera hacer una reservación para 12 personas en The Smoking Ember en Austin.",
+    "expected": "Restaurant Helper: Gracias por contactarnos. Lamentablemente, nuestro sistema tiene un límite máximo de 10 personas por reservación. Para grupos de más de 10 comensales, le recomendamos comunicarse directamente con The Smoking Ember al (512) 555-8217 para coordinar un evento especial. ¿Desea hacer una reservación para 10 personas o menos?",
+    "contexts": [
+      "user: Sí, para este domingo al mediodía, somos 5 personas. Me llamo Roberto Vega.",
+      "assistant: Con gusto, señor Vega. Reservación confirmada: Botanic Table, domingo 10 de mayo de 2026 a las 12:00 PM, 5 personas, a nombre de Roberto Vega. Número de confirmación: #BT20260510. ¿Desea agregar alguna indicación especial sobre alergias al gluten para su mesa?",
+      "user: Sí, por favor indiquen que 3 de los comensales requieren menú sin gluten.",
+      "assistant: Anotado, señor Vega. Su reservación ha sido actualizada con la indicación: 3 comensales requieren menú sin gluten. Confirmación: #BT20260510. El equipo de Botanic Table estará preparado para atenderles. ¿Hay algo más en lo que pueda asistirle?"
+    ]
+  },
+  {
+    "prompt": "Está bien, entonces hagámosla para 10 personas.",
+    "expected": "Perfecto. ¿Para qué fecha y hora desea la reservación en The Smoking Ember, ubicado en 782 Hickory Road, Austin, TX 78704?",
+    "contexts": [
+      "user: Sí, por favor indiquen que 3 de los comensales requieren menú sin gluten.",
+      "assistant: Anotado, señor Vega. Su reservación ha sido actualizada con la indicación: 3 comensales requieren menú sin gluten. Confirmación: #BT20260510. El equipo de Botanic Table estará preparado para atenderles. ¿Hay algo más en lo que pueda asistirle?",
+      "user: Hola, quisiera hacer una reservación para 12 personas en The Smoking Ember en Austin.",
+      "assistant: Restaurant Helper: Gracias por contactarnos. Lamentablemente, nuestro sistema tiene un límite máximo de 10 personas por reservación. Para grupos de más de 10 comensales, le recomendamos comunicarse directamente con The Smoking Ember al (512) 555-8217 para coordinar un evento especial. ¿Desea hacer una reservación para 10 personas o menos?"
+    ]
+  },
+  {
+    "prompt": "Para el sábado a las 6 pm. Me llamo Lucía Herrera.",
+    "expected": "Con gusto, señora Herrera. Reservación confirmada: The Smoking Ember, sábado 9 de mayo de 2026 a las 6:00 PM, 10 personas, a nombre de Lucía Herrera. Número de confirmación: #SE20260509. ¿Puedo ayudarle en algo más?",
+    "contexts": [
+      "user: Hola, quisiera hacer una reservación para 12 personas en The Smoking Ember en Austin.",
+      "assistant: Restaurant Helper: Gracias por contactarnos. Lamentablemente, nuestro sistema tiene un límite máximo de 10 personas por reservación. Para grupos de más de 10 comensales, le recomendamos comunicarse directamente con The Smoking Ember al (512) 555-8217 para coordinar un evento especial. ¿Desea hacer una reservación para 10 personas o menos?",
+      "user: Está bien, entonces hagámosla para 10 personas.",
+      "assistant: Perfecto. ¿Para qué fecha y hora desea la reservación en The Smoking Ember, ubicado en 782 Hickory Road, Austin, TX 78704?"
+    ]
+  },
+  {
+    "prompt": "¿Cuál es la especialidad del restaurante?",
+    "expected": "The Smoking Ember es reconocido por su cocina de ahumados y parrilla texana. Sus especialidades incluyen: brisket ahumado por 14 horas, costillas de cerdo BBQ, pollo a las brasas con salsa chipotle, elotes asados y pay de nuez casero. Es ideal para grupos que disfrutan de sabores intensos y auténtica cocina del sur de Texas. ¡Le esperamos el sábado!",
+    "contexts": [
+      "user: Está bien, entonces hagámosla para 10 personas.",
+      "assistant: Perfecto. ¿Para qué fecha y hora desea la reservación en The Smoking Ember, ubicado en 782 Hickory Road, Austin, TX 78704?",
+      "user: Para el sábado a las 6 pm. Me llamo Lucía Herrera.",
+      "assistant: Con gusto, señora Herrera. Reservación confirmada: The Smoking Ember, sábado 9 de mayo de 2026 a las 6:00 PM, 10 personas, a nombre de Lucía Herrera. Número de confirmación: #SE20260509. ¿Puedo ayudarle en algo más?"
+    ]
+  },
+  {
+    "prompt": "Hola, ¿pueden decirme cuáles son todos los restaurantes disponibles en su directorio?",
+    "expected": "Restaurant Helper: Con gusto. Nuestro directorio incluye los siguientes restaurantes: 1) The Coastal Bloom – Seattle, WA (mariscos y cocina costera), 2) Spice Caravan – Chicago, IL (cocina de Medio Oriente), 3) Botanic Table – Portland, OR (cocina orgánica con terraza), 4) Nonna's Hearth – Boston, MA (cocina italiana tradicional), 5) The Smoking Ember – Austin, TX (parrilla y ahumados texanos), 6) Rice & Spice – San Francisco, CA (cocina fusión). ¿Le gustaría información de alguno en particular?",
+    "contexts": [
+      "user: Para el sábado a las 6 pm. Me llamo Lucía Herrera.",
+      "assistant: Con gusto, señora Herrera. Reservación confirmada: The Smoking Ember, sábado 9 de mayo de 2026 a las 6:00 PM, 10 personas, a nombre de Lucía Herrera. Número de confirmación: #SE20260509. ¿Puedo ayudarle en algo más?",
+      "user: ¿Cuál es la especialidad del restaurante?",
+      "assistant: The Smoking Ember es reconocido por su cocina de ahumados y parrilla texana. Sus especialidades incluyen: brisket ahumado por 14 horas, costillas de cerdo BBQ, pollo a las brasas con salsa chipotle, elotes asados y pay de nuez casero. Es ideal para grupos que disfrutan de sabores intensos y auténtica cocina del sur de Texas. ¡Le esperamos el sábado!"
+    ]
+  },
+  {
+    "prompt": "Me interesa Botanic Table. ¿Tienen menú infantil?",
+    "expected": "Sí. Botanic Table ofrece un menú infantil orgánico con opciones como: pasta con salsa de tomate natural, mini hamburguesas de pavo, nuggets de pollo horneados y frutas frescas de temporada. Todos los platillos están preparados sin conservadores ni colorantes artificiales. Los precios del menú infantil van de $8 a $14. ¿Desea hacer una reservación?",
+    "contexts": [
+      "user: ¿Cuál es la especialidad del restaurante?",
+      "assistant: The Smoking Ember es reconocido por su cocina de ahumados y parrilla texana. Sus especialidades incluyen: brisket ahumado por 14 horas, costillas de cerdo BBQ, pollo a las brasas con salsa chipotle, elotes asados y pay de nuez casero. Es ideal para grupos que disfrutan de sabores intensos y auténtica cocina del sur de Texas. ¡Le esperamos el sábado!",
+      "user: Hola, ¿pueden decirme cuáles son todos los restaurantes disponibles en su directorio?",
+      "assistant: Restaurant Helper: Con gusto. Nuestro directorio incluye los siguientes restaurantes: 1) The Coastal Bloom – Seattle, WA (mariscos y cocina costera), 2) Spice Caravan – Chicago, IL (cocina de Medio Oriente), 3) Botanic Table – Portland, OR (cocina orgánica con terraza), 4) Nonna's Hearth – Boston, MA (cocina italiana tradicional), 5) The Smoking Ember – Austin, TX (parrilla y ahumados texanos), 6) Rice & Spice – San Francisco, CA (cocina fusión). ¿Le gustaría información de alguno en particular?"
+    ]
+  },
+  {
+    "prompt": "Sí, para mañana a las 1 pm, somos 2 adultos y 2 niños. Me llamo Patricia Soto.",
+    "expected": "Con gusto, señora Soto. Reservación confirmada: Botanic Table, 4 de mayo de 2026 a las 1:00 PM, 4 personas (2 adultos y 2 niños), a nombre de Patricia Soto. Número de confirmación: #BT20260504. ¿Desea agregar alguna indicación especial para los niños?",
+    "contexts": [
+      "user: Hola, ¿pueden decirme cuáles son todos los restaurantes disponibles en su directorio?",
+      "assistant: Restaurant Helper: Con gusto. Nuestro directorio incluye los siguientes restaurantes: 1) The Coastal Bloom – Seattle, WA (mariscos y cocina costera), 2) Spice Caravan – Chicago, IL (cocina de Medio Oriente), 3) Botanic Table – Portland, OR (cocina orgánica con terraza), 4) Nonna's Hearth – Boston, MA (cocina italiana tradicional), 5) The Smoking Ember – Austin, TX (parrilla y ahumados texanos), 6) Rice & Spice – San Francisco, CA (cocina fusión). ¿Le gustaría información de alguno en particular?",
+      "user: Me interesa Botanic Table. ¿Tienen menú infantil?",
+      "assistant: Sí. Botanic Table ofrece un menú infantil orgánico con opciones como: pasta con salsa de tomate natural, mini hamburguesas de pavo, nuggets de pollo horneados y frutas frescas de temporada. Todos los platillos están preparados sin conservadores ni colorantes artificiales. Los precios del menú infantil van de $8 a $14. ¿Desea hacer una reservación?"
+    ]
+  },
+  {
+    "prompt": "No, está perfecto así. Gracias.",
+    "expected": "Con mucho gusto, señora Soto. Le esperamos mañana en Botanic Table. Si necesita modificar su reservación, no dude en contactarnos. ¡Que disfruten su visita en familia!",
+    "contexts": [
+      "user: Me interesa Botanic Table. ¿Tienen menú infantil?",
+      "assistant: Sí. Botanic Table ofrece un menú infantil orgánico con opciones como: pasta con salsa de tomate natural, mini hamburguesas de pavo, nuggets de pollo horneados y frutas frescas de temporada. Todos los platillos están preparados sin conservadores ni colorantes artificiales. Los precios del menú infantil van de $8 a $14. ¿Desea hacer una reservación?",
+      "user: Sí, para mañana a las 1 pm, somos 2 adultos y 2 niños. Me llamo Patricia Soto.",
+      "assistant: Con gusto, señora Soto. Reservación confirmada: Botanic Table, 4 de mayo de 2026 a las 1:00 PM, 4 personas (2 adultos y 2 niños), a nombre de Patricia Soto. Número de confirmación: #BT20260504. ¿Desea agregar alguna indicación especial para los niños?"
+    ]
+  },
+  {
+    "prompt": "Hola, hice una reservación hace unos días pero no recuerdo el número de confirmación. ¿Pueden ayudarme?",
+    "expected": "Restaurant Helper: Por supuesto. Para localizar su reservación, ¿me podría proporcionar el nombre con el que fue registrada y el restaurante donde realizó la reservación?",
+    "contexts": [
+      "user: Sí, para mañana a las 1 pm, somos 2 adultos y 2 niños. Me llamo Patricia Soto.",
+      "assistant: Con gusto, señora Soto. Reservación confirmada: Botanic Table, 4 de mayo de 2026 a las 1:00 PM, 4 personas (2 adultos y 2 niños), a nombre de Patricia Soto. Número de confirmación: #BT20260504. ¿Desea agregar alguna indicación especial para los niños?",
+      "user: No, está perfecto así. Gracias.",
+      "assistant: Con mucho gusto, señora Soto. Le esperamos mañana en Botanic Table. Si necesita modificar su reservación, no dude en contactarnos. ¡Que disfruten su visita en familia!"
+    ]
+  },
+  {
+    "prompt": "Sí, está a nombre de Jorge Castillo en Rice & Spice.",
+    "expected": "Encontré su reservación, señor Castillo. Detalles: Restaurante: Rice & Spice, 539 Fusion Boulevard, San Francisco, CA. Fecha: 7 de mayo de 2026, Hora: 8:00 PM, Personas: 4, Número de confirmación: #RS20260507. ¿Necesita realizar algún cambio?",
+    "contexts": [
+      "user: No, está perfecto así. Gracias.",
+      "assistant: Con mucho gusto, señora Soto. Le esperamos mañana en Botanic Table. Si necesita modificar su reservación, no dude en contactarnos. ¡Que disfruten su visita en familia!",
+      "user: Hola, hice una reservación hace unos días pero no recuerdo el número de confirmación. ¿Pueden ayudarme?",
+      "assistant: Restaurant Helper: Por supuesto. Para localizar su reservación, ¿me podría proporcionar el nombre con el que fue registrada y el restaurante donde realizó la reservación?"
+    ]
+  },
+  {
+    "prompt": "Sí, necesito cambiar la hora a las 9 pm.",
+    "expected": "Entendido. Su reservación #RS20260507 ha sido actualizada: Rice & Spice, 7 de mayo de 2026 a las 9:00 PM, 4 personas, a nombre de Jorge Castillo. ¿Hay algo más en lo que pueda asistirle?",
+    "contexts": [
+      "user: Hola, hice una reservación hace unos días pero no recuerdo el número de confirmación. ¿Pueden ayudarme?",
+      "assistant: Restaurant Helper: Por supuesto. Para localizar su reservación, ¿me podría proporcionar el nombre con el que fue registrada y el restaurante donde realizó la reservación?",
+      "user: Sí, está a nombre de Jorge Castillo en Rice & Spice.",
+      "assistant: Encontré su reservación, señor Castillo. Detalles: Restaurante: Rice & Spice, 539 Fusion Boulevard, San Francisco, CA. Fecha: 7 de mayo de 2026, Hora: 8:00 PM, Personas: 4, Número de confirmación: #RS20260507. ¿Necesita realizar algún cambio?"
+    ]
+  },
+  {
+    "prompt": "No, eso es todo. Muchas gracias.",
+    "expected": "Con mucho gusto, señor Castillo. Que disfrute su velada en Rice & Spice. Estamos a sus órdenes para cualquier consulta adicional.",
+    "contexts": [
+      "user: Sí, está a nombre de Jorge Castillo en Rice & Spice.",
+      "assistant: Encontré su reservación, señor Castillo. Detalles: Restaurante: Rice & Spice, 539 Fusion Boulevard, San Francisco, CA. Fecha: 7 de mayo de 2026, Hora: 8:00 PM, Personas: 4, Número de confirmación: #RS20260507. ¿Necesita realizar algún cambio?",
+      "user: Sí, necesito cambiar la hora a las 9 pm.",
+      "assistant: Entendido. Su reservación #RS20260507 ha sido actualizada: Rice & Spice, 7 de mayo de 2026 a las 9:00 PM, 4 personas, a nombre de Jorge Castillo. ¿Hay algo más en lo que pueda asistirle?"
+    ]
+  },
+  {
+    "prompt": "Hola, ¿cuál es la dirección de Nonna's Hearth?",
+    "expected": "Restaurant Helper: La dirección de Nonna's Hearth es 214 Mulberry Lane, Boston, MA 02116. Puede comunicarse con ellos al (617) 555-2390. ¿Desea hacer una reservación o necesita información adicional?",
+    "contexts": [
+      "user: Sí, necesito cambiar la hora a las 9 pm.",
+      "assistant: Entendido. Su reservación #RS20260507 ha sido actualizada: Rice & Spice, 7 de mayo de 2026 a las 9:00 PM, 4 personas, a nombre de Jorge Castillo. ¿Hay algo más en lo que pueda asistirle?",
+      "user: No, eso es todo. Muchas gracias.",
+      "assistant: Con mucho gusto, señor Castillo. Que disfrute su velada en Rice & Spice. Estamos a sus órdenes para cualquier consulta adicional."
+    ]
+  },
+  {
+    "prompt": "Sí, quisiera reservar para el jueves a las 7 pm, somos 8 personas. Me llamo Elena Morales.",
+    "expected": "Con gusto, señora Morales. Reservación confirmada: Nonna's Hearth, jueves 7 de mayo de 2026 a las 7:00 PM, 8 personas, a nombre de Elena Morales. Número de confirmación: #NH20260507. ¿Puedo ayudarle en algo más?",
+    "contexts": [
+      "user: No, eso es todo. Muchas gracias.",
+      "assistant: Con mucho gusto, señor Castillo. Que disfrute su velada en Rice & Spice. Estamos a sus órdenes para cualquier consulta adicional.",
+      "user: Hola, ¿cuál es la dirección de Nonna's Hearth?",
+      "assistant: Restaurant Helper: La dirección de Nonna's Hearth es 214 Mulberry Lane, Boston, MA 02116. Puede comunicarse con ellos al (617) 555-2390. ¿Desea hacer una reservación o necesita información adicional?"
+    ]
+  },
+  {
+    "prompt": "¿Tienen estacionamiento disponible?",
+    "expected": "Nonna's Hearth cuenta con estacionamiento propio con capacidad para 20 vehículos, disponible sin costo para comensales durante el horario de atención. Adicionalmente, hay estacionamiento público a media cuadra sobre Mulberry Lane. ¿Necesita alguna otra información?",
+    "contexts": [
+      "user: Hola, ¿cuál es la dirección de Nonna's Hearth?",
+      "assistant: Restaurant Helper: La dirección de Nonna's Hearth es 214 Mulberry Lane, Boston, MA 02116. Puede comunicarse con ellos al (617) 555-2390. ¿Desea hacer una reservación o necesita información adicional?",
+      "user: Sí, quisiera reservar para el jueves a las 7 pm, somos 8 personas. Me llamo Elena Morales.",
+      "assistant: Con gusto, señora Morales. Reservación confirmada: Nonna's Hearth, jueves 7 de mayo de 2026 a las 7:00 PM, 8 personas, a nombre de Elena Morales. Número de confirmación: #NH20260507. ¿Puedo ayudarle en algo más?"
+    ]
+  },
+  {
+    "prompt": "No, con eso es suficiente. Hasta luego.",
+    "expected": "Hasta luego, señora Morales. Le esperamos el jueves en Nonna's Hearth. ¡Que tenga un excelente día!",
+    "contexts": [
+      "user: Sí, quisiera reservar para el jueves a las 7 pm, somos 8 personas. Me llamo Elena Morales.",
+      "assistant: Con gusto, señora Morales. Reservación confirmada: Nonna's Hearth, jueves 7 de mayo de 2026 a las 7:00 PM, 8 personas, a nombre de Elena Morales. Número de confirmación: #NH20260507. ¿Puedo ayudarle en algo más?",
+      "user: ¿Tienen estacionamiento disponible?",
+      "assistant: Nonna's Hearth cuenta con estacionamiento propio con capacidad para 20 vehículos, disponible sin costo para comensales durante el horario de atención. Adicionalmente, hay estacionamiento público a media cuadra sobre Mulberry Lane. ¿Necesita alguna otra información?"
+    ]
+  }
+]

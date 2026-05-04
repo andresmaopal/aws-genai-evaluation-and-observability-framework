@@ -1,0 +1,17 @@
+{
+    "langfuse": {
+        "project_name" : "Financial-markets-super-agent",
+        "agentTag":"app-YahooFinance",
+        "environment" : "qa",
+        "langfuse_public_key": "pk-lf-xxxxxxx",
+        "langfuse_secret_key" : "sk-lf-xxxxxxxxxx",
+        "langfuse_api_url" : "xxxxxxx"
+    },
+    "agent": {
+        "agentId" : "xxxxxx", 
+        "agentAliasId" : "xxxxx",
+        "evaluation_file": "yfin_test_questions.yml",
+        "evaluator_model": "us.amazon.nova-premier-v1:0",
+        "region": "us-east-1"
+    }
+}

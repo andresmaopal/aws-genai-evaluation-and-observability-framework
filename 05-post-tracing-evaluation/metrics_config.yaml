@@ -1,0 +1,25 @@
+# aspect_critics are binary metrics that return 1 or 0 (true or false)
+aspect_critics:
+
+  - name: "Task/Objective Achieved"
+    definition: "Returns 1 if the final answer fulfills the end-to-end scenario's objective function, considering multi-turn coherence, complete resolution of the request, and adherence to operational guidelines (without investment recommendations or predictions). Returns 0 if the answer does not solve the objective, is incomplete, inconsistent across turns, or violates constraints."
+  
+  - name: "Tone of the Agent Metric"
+    definition: "Return 1 if the agent communication is formal, concise, and is not verbose; otherwise, return 0."
+  
+  - name: "Tool Usage Effectiveness"
+    definition: "Return 1 if the agent appropriately used available tools to fulfill the user's request (such as using retrieve for financial market questions and current_time for time questions). Return 0 if the agent failed to use appropriate tools or used unnecessary tools."
+
+  - name: "Policy Compliance"
+    definition: "Returns 1 if the answer respects the guidelines: does not give investment or timing recommendations, does not offer market predictions, avoids conflicting information, and credits sources; returns 0 if violated."
+
+# rubric_scores are discrete metrics and the result depends on the specified range, e.g: 1-5
+rubric_scores:
+  
+  - name: "Answer Correctness"
+    rubrics:
+      "score1_description": "The answer is completely incorrect or contradicts the reference/ground truth; omits key rules or policies."
+      "score2_description": "The answer is mostly incorrect, with substantial errors in rules, calculations, or policies; may contain partially correct fragments but is unreliable."
+      "score3_description": "The answer is partially correct: covers core aspects but with omissions or inaccuracies that affect its validity for a structured task."
+      "score4_description": "The answer is almost entirely correct and consistent with the reference; only minor or non-critical omissions."
+      "score5_description": "The answer is completely correct, consistent with the reference, and covers required rules/calculations/policies without errors or omissions."
